@@ -62,9 +62,7 @@ const OtpInput = forwardRef<TextInput, Props>(
     );
 
     return (
-      // @ts-expect-error
       <View style={[inputContainerStyles, focused && focusStyles]}>
-        {/* @ts-expect-error */}
         <TextInput
           autoFocus={autoFocus}
           onBlur={() => setFocused(false)}
